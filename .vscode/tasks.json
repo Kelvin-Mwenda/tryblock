@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C/C++: g++.exe build active file",
+      "command": "C:/msys64/ucrt64/bin/g++.exe",
+      "args": [
+        "-g",
+        "-std=c++17",
+        "-I${workspaceFolder}/include",
+        "-I${workspaceFolder}/include/glad",
+        "-I${workspaceFolder}/include/GLFW",
+        "-I${workspaceFolder}/include/GL",
+        "-I${workspaceFolder}/include/KHR",
+        "-L${workspaceFolder}/lib",
+        "${workspaceFolder}/src/main.cpp",
+        "${workspaceFolder}/src/glad.c",
+        "${workspaceFolder}/src/Gouraud.c",
+        "${workspaceFolder}/src/PhongShading.c",
+        "${workspaceFolder}/src/Faceted.c",
+        "-lopengl32",
+        "-lglu32",
+        "-lgdi32",
+        "-lglfw3dll",
+        "-o",
+        "${workspaceFolder}/test.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "compiler: C:/msys64/ucrt64/bin/g++.exe"
+    }
+  ]
+}
+
